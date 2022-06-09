@@ -1,8 +1,6 @@
 <template>
   <main>
-  
     <div class="directo">
-      <img src="" alt="">
       <div class="iconodirecto">
         <NuxtLink to="player">
               <MlIconPlay />
@@ -137,5 +135,63 @@ h3{
   width: 80%;
   margin: 0 auto;
 }
+.categoria{
+  border-radius: 60px;
+  margin: 10px;
+}
+.blanco{
+  padding-right: 0px;
+}
 
+@media screen and (max-width: 800px) {
+  h1{
+    font-size: 15px;
+  }
+  .iconodirecto{
+    width: 50px;
+    height: 50px;
+  }
+  .iconodirecto svg{
+    width: 30px;
+    height: 30px;
+  }
+  .directo{
+    height: 100px;
+  }
+  h2{
+    font-size: 15px;
+    
+  }
+  h3{
+    font-size: 15px;
+    margin-left: 5px;
+  }
+  .blanco{
+    padding: 30px;
+    padding-right: 0px;
+  }
+  .gris{
+    padding-left: 30px;
+  }
+  .categoria{
+    padding-left: 0px;
+    margin-right: 0px;
+  }
+  .deportes{
+    margin-left: 0px;
+  }
+  .noticias{
+    margin-left: 0px;
+  }
+  .actualidad{
+    margin-left: 0px;
+  }
+  .programasprueba{
+    margin-left: 0px;
+    
+  }
+  .categoria{
+    border-radius: 20px;
+  }
+}
 </style>

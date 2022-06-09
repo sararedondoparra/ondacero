@@ -2,12 +2,12 @@
     <NuxtLink to="player">
     <article class="cellcard"> 
         <div class="horario">
-            <p style="font-weight: bold; font-size: 20px">12:30-14:30</p>
+            <p class="textohorario">12:30-14:30</p>
         </div>
         <div class="cardprograma">
             <div class="textoprograma">
-                <p class="nombreprograma" style="font-weight: bold; font-size: 24px">Nombre Programa</p>
-                <p style="font-size: 14px">Lorem ipsum dolor sit amet,<br>adipiscing elit, sed<br>do eiusmod tempor incididunt ut<br>labore et dolore magna aliqua. Ut<br>enim ad minim veniam, quis<br>nostrud exercitation ullamco<br>laboris nisi ut aliquip ex ea<br>commodo consequat. </p>
+                <p class="nombreprograma">Nombre Programa</p>
+                <p class="textocard">Lorem ipsum dolor sit amet,<br>adipiscing elit, sed<br>do eiusmod tempor incididunt ut<br>labore et dolore magna aliqua. Ut<br>enim ad minim veniam, quis<br>nostrud exercitation ullamco<br>laboris nisi ut aliquip ex ea<br>commodo consequat. </p>
             </div>
             <div class="imagenprograma">
                 <img :src="'/fondopodcast.webp'" alt="">
@@ -39,6 +39,11 @@
 }
 .nombreprograma{
     line-height: 50px;
+    font-weight: bold;
+    font-size: 24px;
+}
+.textocard{
+    font-size: 14px;
 }
 .imagenprograma{
     width: 209px;
@@ -61,5 +66,45 @@
     padding-top: 20px;
     padding-left: 50px;
 }
-
+.textohorario{
+    font-weight: bold;
+    font-size: 20px;
+}
+@media screen and (max-width: 800px){
+    .cellcard{
+        width: 325px;
+        height: 220px;
+        border-radius: 40px;
+    }
+    .horario{
+        width: 325px;
+        height: 40px;
+    }
+    .horario p{
+        padding-top: 13px;
+        padding-left: 25px;
+    }
+    .imagenprograma{
+        width: 149px;
+        height: 235px;
+        padding: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    
+    .cardprograma .textoprograma{
+        padding-left: 25px;
+        margin-top: -50px;
+    }
+    .nombreprograma{
+        line-height: 30px;
+        font-size: 15px;
+    }
+    .textocard{
+        font-size: 9px;
+    }
+    .textohorario{
+        font-size: 12px;
+    }
+}
 </style>

@@ -1,31 +1,31 @@
 <template>
     <NuxtLink to="player">
-    <article class="cellpodcast"> 
-        <div class="imagenpodcast">
+    <article class="cellplaylist"> 
+        <div class="imagenplaylist">
             <img :src="'/Oye.jpg'" alt="">
         </div>
-        <div class="textopodcast">
-            <p class="p1">Nombre Podcast</p>
-            <p class="p2">Nombre Locutor</p>
+        <div class="textoplaylist">
+            <p class="pp1">Nombre Playlist</p>
+            <p class="pp2">Autor de la Playlist</p>
         </div>
     </article>
     </NuxtLink>
 </template>
 
 <style>
-.cellpodcast{
-    width: 430px;
+.cellplaylist{
+    width: 930px;
     height: 190px;
     display: flex;
     align-items: center;
     padding: 10px;
-    background-color: #48ab34;
+    background-color: black;
     border-radius: 200px;
     color: white;
     flex: none;
     margin-right: 20px;
 }
-.imagenpodcast{
+.imagenplaylist{
     width: 140px;
     height: 140px;
     border-radius: 100%;
@@ -33,38 +33,37 @@
     margin-right: 10px;
     margin-left: 20px;
 }
-.imagenpodcast img{
+.imagenplaylist img{
     border-radius: 100%;
 }
-.textopodcast{
+.textoplaylist{
     line-height: 50px;
 }
-.p1{
+.pp1{
     font-weight: bold;
     font-size: 24px;
 }
-.p2{
+.pp2{
     font-size: 20px;
 }
-
 @media screen and (max-width: 800px) {
-    .cellpodcast{
-        width: 325px;
+    .cellplaylist{
+        width: 410px;
         height: 130px;
     }
-    .textopodcast{
-        line-height: 30px;
-    }
-    .p1{
-        font-size: 15px;
-    }
-    .p2{
-        font-size: 15px;
-    }
-    .imagenpodcast{
-        width: 110px;
-        height: 110px;
-        margin-left: 5px;
-    }
+}
+.pp1{
+    font-size: 15px;
+}
+.pp2{
+    font-size: 12px;
+}
+.textoplaylist{
+    line-height: 30px;
+}
+.imagenplaylist{
+    width: 110px;
+    height: 110px;
+    margin-left: 5px;
 }
 </style>

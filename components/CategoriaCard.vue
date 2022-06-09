@@ -22,6 +22,18 @@
     justify-content: center;
     align-items: center;
 }
+@media screen and (max-width: 800px) {
+    .categoriacard{
+        width: 200px;
+        height: 130px;
+        border-radius: 20px;
+    }
+    .imagencategoria img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
 </style>
 
 <script>
@@ -29,4 +41,5 @@ export default {
     name: "CategoriaCard",
     props: ["source"]
 }
+
 </script>

@@ -19,4 +19,9 @@ export default {
   background-size: 100% 200%;
   height: 100vh;
 }
+@media screen and (max-width: 800px) {
+  .main{
+    background-size: 150% 100%;
+  }
+}
 </style>

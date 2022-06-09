@@ -9,7 +9,7 @@
                     </NuxtLink>
             </li>
             <li>
-                <NuxtLink to="about">
+                <NuxtLink to="lista">
                     <MlIconBookmark class="lista"/>
                     Mi lista
                     </NuxtLink>
@@ -55,7 +55,7 @@
 
 
 <style lang="postcss">
-nav{
+.barranavegacion{
     position: fixed;
     top: 0;
     right: 0;
@@ -106,5 +106,23 @@ nav{
 }
 .nuxt-link-exact-active{
     font-weight: bold;
+}
+@media screen and (max-width: 800px) {
+    .barranavegacion{
+        ul{
+            li{
+                font-size: 0px;
+                .podcast{
+                    display: block;
+                }
+                .lista{
+                    display: block;
+                }
+                .sesion{
+                    display: block;
+                }
+            }
+        }
+    }
 }
 </style>

@@ -222,4 +222,10 @@ export default {
     font-size: 0.8em;
   }
 }
+
+@media screen and (max-width: 800px) {
+  .player{
+    right: 20%;
+  }
+}
 </style>

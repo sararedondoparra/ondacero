@@ -6,26 +6,26 @@
     </div>
     <nav>
         <ul class="seccion">
-            <li class="fav" style="border-bottom: 5px solid green; margin-bottom: -2px;">
-                <NuxtLink to="lista"> 
+            <li class="fav"> 
+              <NuxtLink to="lista"> 
                 Favoritos 
                 </NuxtLink>
             </li>
             <li class="tarde">
-                <NuxtLink to="mastarde"> 
+              <NuxtLink to="mastarde"> 
                 Escuchar más tarde 
                 </NuxtLink>
             </li>
-            <li class="lists">
-                <NuxtLink to="playlists"> 
+            <li class="lists" style="border-bottom: 5px solid green; margin-bottom: -2px;">
+              <NuxtLink to="playlists"> 
                 Playlist 
                 </NuxtLink>
             </li>
         </ul>
     </nav>
     <section class="listafavs">
-      <article class="podcastsfavs">
-        <Podcast-Cell v-for="(item, index) in 24" :key="index" class="cell"/>
+      <article class="playlistsfavs">
+        <Playlist-Cell v-for="(item, index) in 8" :key="index" class="cell"/>
       </article>
     </section>
   </main>
@@ -50,12 +50,13 @@
     border-bottom: 3px solid gray;
     margin-top: 40px;
 }   
-.podcastsfavs{
+.playlistsfavs{
     width: 100%;
     flex-wrap: wrap;
     display: flex;
+    justify-content: center;
 }
-.podcastsfavs .cell{
+.playlistsfavs .cell{
     padding-bottom: 20px;
 }
 .fav{
