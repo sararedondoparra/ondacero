@@ -51,19 +51,20 @@
         width: 410px;
         height: 130px;
     }
+    .pp1{
+        font-size: 15px;
+    }
+    .pp2{
+        font-size: 12px;
+    }
+    .textoplaylist{
+        line-height: 30px;
+    }
+    .imagenplaylist{
+        width: 110px;
+        height: 110px;
+        margin-left: 5px;
+    }
 }
-.pp1{
-    font-size: 15px;
-}
-.pp2{
-    font-size: 12px;
-}
-.textoplaylist{
-    line-height: 30px;
-}
-.imagenplaylist{
-    width: 110px;
-    height: 110px;
-    margin-left: 5px;
-}
+
 </style>
